@@ -16,6 +16,10 @@ import android.view.MenuItem;
 import com.ust.jupiter.jupiter.R;
 import com.ust.jupiter.jupiter.fragment.CUJoiningFragment;
 import com.ust.jupiter.jupiter.fragment.CUManagementFragment;
+import com.ust.jupiter.jupiter.fragment.DigitalAssetFragment;
+import com.ust.jupiter.jupiter.fragment.OverviewFragment;
+import com.ust.jupiter.jupiter.fragment.ReceiveTokenFragment;
+import com.ust.jupiter.jupiter.fragment.TransferTokenFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -82,6 +86,14 @@ public class MainActivity extends AppCompatActivity
             replaceFragment(new CUManagementFragment());
         } else if (id == R.id.nav_join_cu) {
             replaceFragment(new CUJoiningFragment());
+        } else if (id == R.id.nav_overview) {
+            replaceFragment(new OverviewFragment());
+        } else if (id == R.id.nav_transfer_token) {
+            replaceFragment(new TransferTokenFragment());
+        } else if (id == R.id.nav_receive_token) {
+            replaceFragment(new ReceiveTokenFragment());
+        } else if (id == R.id.nav_digital_asset) {
+            replaceFragment(new DigitalAssetFragment());
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
