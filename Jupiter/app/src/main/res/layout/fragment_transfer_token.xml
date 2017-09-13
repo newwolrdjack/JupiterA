@@ -3,16 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.ust.jupiter.jupiter.fragment.TransferTokenFragment">
-
-
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_marginTop="10dp"
-        android:id="@+id/text_transfer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Hi this is transfer token fragment" />
     <View
         android:layout_marginTop="50dp"
         android:layout_width="8dp"
@@ -113,8 +104,6 @@
         android:layout_marginTop="400dp"
         android:layout_marginLeft="140dp"
         android:id="@+id/button_transfer"
-        android:text="Next Step"
-
-        />
+        android:text="Next Step" />
 
 </FrameLayout>
