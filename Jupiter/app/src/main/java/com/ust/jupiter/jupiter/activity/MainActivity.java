@@ -11,13 +11,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.ust.jupiter.jupiter.R;
 import com.ust.jupiter.jupiter.fragment.CUJoiningFragment;
+import com.ust.jupiter.jupiter.fragment.CUManagementFragment;
 import com.ust.jupiter.jupiter.fragment.DigitalAssetFragment;
 import com.ust.jupiter.jupiter.fragment.OverviewFragment;
 import com.ust.jupiter.jupiter.fragment.ReceiveTokenFragment;
@@ -25,7 +24,6 @@ import com.ust.jupiter.jupiter.fragment.TransferTokenFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +49,6 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
     }
 
 
@@ -87,7 +84,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.nav_cu_management) {
-            intentCUManagement();
+            replaceFragment(new CUManagementFragment());
         } else if (id == R.id.nav_join_cu) {
             replaceFragment(new CUJoiningFragment());
         } else if (id == R.id.nav_overview) {
@@ -98,6 +95,8 @@ public class MainActivity extends AppCompatActivity
             replaceFragment(new ReceiveTokenFragment());
         } else if (id == R.id.nav_digital_asset) {
             replaceFragment(new DigitalAssetFragment());
+        }else if(id == R.id.nav_login){
+            startActivity(new Intent(this, materiallogin.MainActivity.class));
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -109,12 +108,6 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.fragment_main,fragment);
         transaction.commit();
-    }
-
-    private void intentCUManagement() {
-        Intent intent = new Intent();
-        intent.setClass(MainActivity.this, CUManagementActivity.class);
-        startActivity(intent);
     }
 
 

@@ -8,6 +8,16 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello consensus unit</string>
-    <string name="title_activity_cu_management">Consensus unit</string>
-    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_login">Login Activity</string>
+    <string name="login">Login</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="forget_your_password">Forget your password? </string>
+    <string name="login_success">Successful login!</string>
+    <string name="forgot_your_password">Forgot your password ?</string>
+    <string name="go">GO</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="next">NEXT</string>
+    <string name="register">REGISTER</string>
+    <string name="reg_success">Successful registration!</string>
 </resources>
