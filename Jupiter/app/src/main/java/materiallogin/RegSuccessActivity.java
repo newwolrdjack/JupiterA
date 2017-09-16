@@ -16,7 +16,7 @@ public class RegSuccessActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg_success);
 
-        tv = (TextView) findViewById(R.id.reg);
+        tv = (TextView) findViewById(R.id.tv);
         tv.setText("Successful registration! User address:"+getIntent().getStringExtra("id"));
 
         Explode explode = new Explode();
