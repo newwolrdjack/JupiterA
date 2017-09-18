@@ -33,6 +33,10 @@
                 android:icon="@drawable/ic_menu_share"
                 android:title="Join CU" />
             <item
+                android:id="@+id/nav_mem_list"
+                android:icon="@drawable/ic_menu_share"
+                android:title="CU Member List" />
+            <item
                 android:id="@+id/nav_cu_management"
                 android:icon="@drawable/ic_menu_manage"
                 android:title="CU management" />

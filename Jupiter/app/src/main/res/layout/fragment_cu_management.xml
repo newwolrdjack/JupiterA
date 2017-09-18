@@ -8,5 +8,84 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hi this is consensus unit management fragment"/>
+        android:text="This is consensus unit management fragment"/>
+    <View
+        android:layout_marginTop="50dp"
+        android:layout_width="8dp"
+        android:layout_height="15dp"
+        android:background="@color/colorBackground" />
+
+    <TextView
+        android:id="@+id/text_block_num_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/number_of_blocks"
+        android:textColor="@color/colorTitle"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/text_block_num"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="current number of blocks"
+        android:layout_marginStart="20dp"
+        android:maxLines="1" />
+
+    <View
+        android:layout_marginTop="150dp"
+        android:layout_width="8dp"
+        android:layout_height="15dp"
+        android:background="@color/colorBackground" />
+    <TextView
+        android:id="@+id/text_storage_status_title"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/colorTitle"
+        android:textSize="18sp"
+        android:text="@string/storage_status" />
+    <TextView
+        android:id="@+id/text_transfer_Stardust"
+        android:layout_marginTop="170dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="current storage status"
+        android:layout_marginStart="20dp"
+        android:maxLines="1" />
+
+    <View
+        android:layout_marginTop="250dp"
+        android:layout_width="8dp"
+        android:layout_height="15dp"
+        android:background="@color/colorBackground" />
+    <TextView
+        android:id="@+id/text_distrib_status_title"
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/colorTitle"
+        android:textSize="18sp"
+        android:text="@string/distribution_status" />
+    <TextView
+        android:id="@+id/text_transfer_costnumber"
+        android:layout_marginTop="270dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="current distribution status"
+        android:maxLines="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="140dp"
+        android:id="@+id/button_optcu"
+        android:text="Optimize My CU" />
+
 </FrameLayout>

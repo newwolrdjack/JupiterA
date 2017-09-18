@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import com.ust.jupiter.jupiter.R;
 import com.ust.jupiter.jupiter.fragment.CUJoiningFragment;
 import com.ust.jupiter.jupiter.fragment.CUManagementFragment;
+import com.ust.jupiter.jupiter.fragment.CUmemListFragment;
 import com.ust.jupiter.jupiter.fragment.DigitalAssetFragment;
 import com.ust.jupiter.jupiter.fragment.OverviewFragment;
 import com.ust.jupiter.jupiter.fragment.ReceiveTokenFragment;
@@ -95,6 +96,8 @@ public class MainActivity extends AppCompatActivity
             replaceFragment(new ReceiveTokenFragment());
         } else if (id == R.id.nav_digital_asset) {
             replaceFragment(new DigitalAssetFragment());
+        }else if (id == R.id.nav_mem_list){
+            replaceFragment(new CUmemListFragment());
         }else if(id == R.id.nav_login){
             startActivity(new Intent(this, materiallogin.MainActivity.class));
         }
