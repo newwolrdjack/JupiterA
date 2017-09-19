@@ -12,55 +12,45 @@
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="@string/number_of_blocks"
-        android:textColor="#9a9a9a"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/text_block_num"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="50dp"
-        android:text="23,451"
-        android:textColor="#9a9a9a"
-        android:textSize="16sp" />
+        android:textColor="#000000"
+        android:textSize="14sp" />
 
     <View
         android:layout_height="3px"
         android:background="@color/colorHint"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_width="fill_parent" />
 
     <TextView
         android:id="@+id/text_storage_status_title"
-        android:layout_marginTop="100dp"
-        android:layout_width="347dp"
+        android:layout_width="325dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:textColor="#9a9a9a"
-        android:textSize="16sp"
-        android:text="@string/storage_status" />
+        android:layout_marginTop="65dp"
+        android:text="@string/storage_status"
+        android:textColor="#000000"
+        android:textSize="14sp" />
 
     <View
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="95dp"
         android:layout_marginStart="20dp"
         android:layout_width="80dp"
         android:layout_height="15dp"
         android:background="@color/colorBackground" />
 
     <View
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="115dp"
         android:layout_marginStart="20dp"
         android:layout_width="150dp"
         android:layout_height="15dp"
         android:background="@color/colorBackground" />
 
     <View
-        android:layout_marginTop="175dp"
+        android:layout_marginTop="135dp"
         android:layout_marginStart="20dp"
         android:layout_width="180dp"
         android:layout_height="15dp"
@@ -69,40 +59,39 @@
     <View
         android:layout_height="3px"
         android:background="@color/colorHint"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="170dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_width="fill_parent" />
 
     <TextView
-        android:id="@+id/text_distrib_status_title"
-        android:layout_width="348dp"
+        android:id="@+id/text_block_num"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="220dp"
-        android:text="@string/distribution_status"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="20dp"
+        android:text="23,451"
         android:textColor="#9a9a9a"
-        android:textSize="16sp" />
+        android:textSize="14sp" />
 
     <TextView
-        android:id="@+id/text_transfer_costnumber"
-        android:layout_width="349dp"
-        android:layout_height="110dp"
+        android:id="@+id/text_distrib_status_title"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="240dp"
-        android:background="@color/colorTrifling"
-        android:hint="Add an image of current distribution status."
-        android:maxLines="1"
-        android:textSize="16sp" />
+        android:layout_marginTop="170dp"
+        android:text="@string/distribution_status"
+        android:textColor="#000000"
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/button_optcu"
         android:layout_width="wrap_content"
         android:layout_height="78dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="320dp"
         android:background="@drawable/roundbutton"
         android:text="Optimize CU"
-        android:textColor="#9a9a9a" />
+        android:textColor="#000000" />
 
 </FrameLayout>

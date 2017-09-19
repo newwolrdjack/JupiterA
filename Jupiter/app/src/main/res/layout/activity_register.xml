@@ -123,9 +123,7 @@
                    android:layout_height="50dp"
                    android:text="@string/next"
                    android:textColor="#00CCCC"
-                   android:background="#ffffff"
-
-                   >
+                   android:background="#ffffff">
                </Button>
 
            </LinearLayout>
