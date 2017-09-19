@@ -1,4 +1,4 @@
-package materiallogin;
+package com.ust.jupiter.jupiter.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

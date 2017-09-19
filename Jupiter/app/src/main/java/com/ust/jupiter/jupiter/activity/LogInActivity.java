@@ -1,4 +1,4 @@
-package materiallogin;
+package com.ust.jupiter.jupiter.activity;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
@@ -13,12 +13,13 @@ import android.widget.EditText;
 
 
 import com.ust.jupiter.jupiter.R;
+import com.ust.jupiter.jupiter.activity.RegisterActivity;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity {
+public class LogInActivity extends AppCompatActivity {
 
     @InjectView(R.id.et_username)
     EditText etUsername;
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_login);
         ButterKnife.inject(this);
 
     }
