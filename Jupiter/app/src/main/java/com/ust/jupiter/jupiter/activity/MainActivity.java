@@ -95,8 +95,6 @@ public class MainActivity extends AppCompatActivity
             replaceFragment(new ReceiveTokenFragment());
         } else if (id == R.id.nav_digital_asset) {
             replaceFragment(new DigitalAssetFragment());
-        }else if(id == R.id.nav_login){
-            startActivity(new Intent(this, materiallogin.MainActivity.class));
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
