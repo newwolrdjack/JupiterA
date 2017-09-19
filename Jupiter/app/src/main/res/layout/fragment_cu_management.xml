@@ -103,7 +103,7 @@
         android:layout_marginTop="420dp"
         android:background="@drawable/roundbutton"
         android:text="Optimize CU"
-        android:textColor="#9a9a9a" />
+        android:textColor="#FFFFFF" />
 
 
 </FrameLayout>

@@ -89,7 +89,7 @@
         android:layout_gravity="center_horizontal"
         android:id="@+id/button_transfer"
         android:background="@drawable/roundbutton"
-        android:textColor="#9a9a9a"
+        android:textColor="#FFFFFF"
         android:text="Next Step" />
 
 </FrameLayout>
