@@ -5,9 +5,149 @@
     tools:context="com.ust.jupiter.jupiter.fragment.CUJoiningFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="8dp"
+        android:layout_height="15dp"
+        android:background="#00CCCC" />
     <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="#00CCFF"
+        android:textSize="18sp"
+        android:text="CU introduction" />
+    <View
+        android:layout_marginTop="60dp"
+        android:layout_width="4dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="30dp"
+        android:background="#00CCCC" />
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:textColor="#00CCFF"
+        android:textSize="18sp"
+        android:text="CU Name" />
+    <TextView
+        android:id="@+id/text_cu_joining_name"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="150dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hi this is Joining CU" />
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="CU name"
+        android:maxLines="1"/>
+
+    <View
+        android:layout_marginTop="90dp"
+        android:layout_width="4dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="30dp"
+        android:background="#00CCCC" />
+    <TextView
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:textColor="#00CCFF"
+        android:textSize="18sp"
+        android:text="Number" />
+    <TextView
+        android:id="@+id/text_cu_joining_number"
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Number" />
+
+    <View
+        android:layout_marginTop="120dp"
+        android:layout_width="4dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="30dp"
+        android:background="#00CCCC" />
+    <TextView
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:textColor="#00CCFF"
+        android:textSize="18sp"
+        android:text="Token" />
+    <TextView
+        android:id="@+id/text_cu_joining_token"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Token" />
+
+    <View
+        android:layout_marginTop="150dp"
+        android:layout_width="4dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="30dp"
+        android:background="#00CCCC" />
+    <TextView
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:textColor="#00CCFF"
+        android:textSize="18sp"
+        android:text="Build Time" />
+    <TextView
+        android:id="@+id/text_cu_joining_build_time"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Build Time" />
+
+    <View
+        android:layout_marginTop="200dp"
+        android:layout_width="8dp"
+        android:layout_height="15dp"
+        android:background="#00CCCC" />
+    <TextView
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="#00CCFF"
+        android:textSize="18sp"
+        android:text="CU Address" />
+    <TextView
+        android:layout_marginTop="240dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="CU Address" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="140dp"
+        android:id="@+id/button_transfer"
+        android:text="Join"
+
+        />
 
 </FrameLayout>
