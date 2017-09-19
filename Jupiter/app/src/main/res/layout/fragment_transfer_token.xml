@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ust.jupiter.jupiter.fragment.TransferTokenFragment">
+    <!-- TODO: Update blank fragment layout -->
+
+    <View
+        android:layout_marginTop="50dp"
+        android:layout_width="8dp"
+        android:layout_height="15dp"
+        android:background="#00CCCC" />
+    <TextView
+        android:id="@+id/text_transfer_to"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="#9a9a9a"
+        android:textSize="18sp"
+        android:text="To" />
+
+    <EditText
+        android:id="@+id/text_transfer_address"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:hint="Transfer address"
+        android:maxLines="1" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="300dp"
+        android:id="@+id/button_transfer_address"
+        android:text="QR" />
+
+    <View
+        android:layout_marginTop="150dp"
+        android:layout_width="8dp"
+        android:layout_height="15dp"
+        android:background="#00CCCC" />
+    <TextView
+        android:id="@+id/text_transfer_Star"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="#9a9a9a"
+        android:textSize="18sp"
+        android:text="Transfer By Stardust" />
+    <EditText
+        android:id="@+id/text_transfer_Stardust"
+        android:layout_marginTop="170dp"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:hint="Stardust number"
+        android:layout_marginStart="20dp"
+        android:maxLines="1" />
+
+
+    <TextView
+        android:id="@+id/text_transfer_Token"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:textColor="#9a9a9a"
+        android:textSize="18sp"
+        android:text="By Token" />
+    <EditText
+        android:id="@+id/text_transfer_Tokennumber"
+        android:layout_marginTop="170dp"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:hint="Token ID"
+        android:maxLines="1" />
+
+
+    <TextView
+        android:id="@+id/text_transfer_cost"
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="#9a9a9a"
+        android:textSize="18sp"
+        android:text="Cost" />
+    <EditText
+        android:id="@+id/text_transfer_costnumber"
+        android:layout_marginTop="270dp"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:hint="Money number"
+        android:maxLines="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="400dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button_transfer"
+        android:background="@drawable/roundbutton"
+        android:textColor="#FFFFFF"
+        android:text="Next Step" />
+
+</FrameLayout>

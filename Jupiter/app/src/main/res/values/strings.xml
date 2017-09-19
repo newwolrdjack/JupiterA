@@ -20,7 +20,8 @@
     <string name="next">NEXT</string>
     <string name="register">REGISTER</string>
     <string name="reg_success">Successful registration!</string>
-    <string name="number_of_blocks">Number of Blocks: </string>
+    <string name="number_of_blocks">Number of Blocks:   </string>
     <string name="storage_status">Storage Status</string>
     <string name="distribution_status">Distribution Status</string>
+    <string name="current_cu_address">0x16obUsfXvcYq6mXXC2XxyUGyq57MRFjCKu</string>
 </resources>

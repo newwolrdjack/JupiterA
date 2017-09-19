@@ -19,11 +19,6 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="Digital asset" />
 
-        <item
-            android:id="@+id/nav_login"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Login" />
-
     </group>
 
     <item android:title="Consensus unit">
@@ -40,6 +35,10 @@
                 android:id="@+id/nav_cu_management"
                 android:icon="@drawable/ic_menu_manage"
                 android:title="CU management" />
+            <item
+                android:id="@+id/nav_cu_overview"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="CU Overview" />
         </menu>
     </item>
 

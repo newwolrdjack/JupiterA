@@ -5,13 +5,12 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
-import android.transition.Explode;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
 
 import com.ust.jupiter.jupiter.R;
 
@@ -42,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick({R.id.bt_go, R.id.fab})
     public void onClick(View view) {
+        String username = etUsername.getText().toString();
+        String userPasswd = etPassword.getText().toString();
         switch (view.getId()) {
             case R.id.fab:
                 getWindow().setExitTransition(null);
@@ -56,15 +57,17 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case R.id.bt_go:
-                Explode explode = new Explode();
-                explode.setDuration(500);
+                if(loginChecker(username,userPasswd)) {
+                    Intent i2 = new Intent(this, com.ust.jupiter.jupiter.activity.MainActivity.class);
+                    startActivity(i2);
+                } else {
 
-                getWindow().setExitTransition(explode);
-                getWindow().setEnterTransition(explode);
-                ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
-                Intent i2 = new Intent(this, LoginSuccessActivity.class);
-                startActivity(i2, oc2.toBundle());
+                }
                 break;
         }
+    }
+
+    private Boolean loginChecker(String username, String userpasswd) {
+        return true;
     }
 }
