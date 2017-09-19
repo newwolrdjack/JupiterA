@@ -137,7 +137,7 @@
             android:layout_gravity="center_horizontal|top"
             android:src="@drawable/plus_x"
             android:transitionName="loginFab"
-            app:backgroundTint="@color/jupiterchain"
+            app:backgroundTint="@color/jupiterChain"
             app:fabSize="normal" />
     </FrameLayout>
 

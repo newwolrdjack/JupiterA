@@ -15,6 +15,5 @@
         android:text="@string/login_success"
         android:textSize="24sp"
         android:textColor="@color/colorText"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 </RelativeLayout>
