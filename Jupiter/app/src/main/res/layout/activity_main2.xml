@@ -23,20 +23,14 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="45dp">
-            <View
-                android:layout_alignParentStart="true"
-                android:layout_width="8dp"
-                android:layout_height="match_parent"
-                android:background="#00CCCC"
-                />
             <TextView
                 android:layout_centerVertical="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="40dp"
                 android:text="Login"
-                android:textColor="#9a9a9a"
-                android:textSize="18sp"
+                android:textColor="@color/colorCommonHint"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 />
         </RelativeLayout>
@@ -101,8 +95,7 @@
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:text="@string/go"
-                    android:textColor="#9a9a9a"
-                    >
+                    android:textColor="#9a9a9a">
                 </Button>
             </RelativeLayout>
             <TextView

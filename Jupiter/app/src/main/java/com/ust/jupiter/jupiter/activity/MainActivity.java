@@ -18,6 +18,7 @@ import com.ust.jupiter.jupiter.R;
 import com.ust.jupiter.jupiter.fragment.CUJoiningFragment;
 import com.ust.jupiter.jupiter.fragment.CUManagementFragment;
 import com.ust.jupiter.jupiter.fragment.CUmemListFragment;
+import com.ust.jupiter.jupiter.fragment.CUOverviewFragment;
 import com.ust.jupiter.jupiter.fragment.DigitalAssetFragment;
 import com.ust.jupiter.jupiter.fragment.OverviewFragment;
 import com.ust.jupiter.jupiter.fragment.ReceiveTokenFragment;
@@ -89,6 +90,8 @@ public class MainActivity extends AppCompatActivity
             replaceFragment(new DigitalAssetFragment());
         }else if (id == R.id.nav_mem_list){
             replaceFragment(new CUmemListFragment());
+        } else if (id == R.id.nav_cu_overview) {
+            replaceFragment(new CUOverviewFragment());
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

@@ -5,6 +5,11 @@
     tools:context="com.ust.jupiter.jupiter.fragment.TransferTokenFragment">
     <!-- TODO: Update blank fragment layout -->
 
+    <View
+        android:layout_marginTop="50dp"
+        android:layout_width="8dp"
+        android:layout_height="15dp"
+        android:background="#00CCCC" />
     <TextView
         android:id="@+id/text_transfer_to"
         android:layout_marginTop="50dp"
@@ -25,6 +30,20 @@
         android:maxLines="1" />
 
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="300dp"
+        android:id="@+id/button_transfer_address"
+        android:text="QR" />
+
+    <View
+        android:layout_marginTop="150dp"
+        android:layout_width="8dp"
+        android:layout_height="15dp"
+        android:background="#00CCCC" />
     <TextView
         android:id="@+id/text_transfer_Star"
         android:layout_marginTop="150dp"
