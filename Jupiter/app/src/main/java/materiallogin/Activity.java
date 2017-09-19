@@ -13,12 +13,13 @@ import android.widget.EditText;
 
 
 import com.ust.jupiter.jupiter.R;
+import com.ust.jupiter.jupiter.activity.RegisterActivity;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity {
+public class Activity extends AppCompatActivity {
 
     @InjectView(R.id.et_username)
     EditText etUsername;

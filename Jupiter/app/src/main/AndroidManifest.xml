@@ -10,28 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name="materiallogin.MainActivity">
+        <activity android:name="materiallogin.Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="materiallogin.RegisterActivity"
+        <activity android:name=".activity.RegisterActivity"
             android:theme="@style/Translucent" />
-        <activity android:name="materiallogin.LoginSuccessActivity">
+        <activity android:name=".activity.LoginSuccessActivity">
         </activity>
-        <activity android:name="materiallogin.RegSuccessActivity"></activity>
+        <activity android:name=".activity.RegSuccessActivity"></activity>
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity
-            android:name=".activity.LoginActivity"
-            android:label="@string/title_activity_login"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
