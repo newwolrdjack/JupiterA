@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ust.jupiter.jupiter.activity.CUManagementActivityFragment"
-    tools:showIn="@layout/activity_cumanagement">
+    tools:context="com.ust.jupiter.jupiter.fragment.CUManagementFragment">
 
     <TextView
         android:id="@+id/text_block_num_title"
@@ -43,14 +42,14 @@
         android:background="@color/colorBackground" />
 
     <View
-        android:layout_marginTop="115dp"
+        android:layout_marginTop="120dp"
         android:layout_marginStart="20dp"
         android:layout_width="150dp"
         android:layout_height="15dp"
         android:background="@color/colorBackground" />
 
     <View
-        android:layout_marginTop="135dp"
+        android:layout_marginTop="145dp"
         android:layout_marginStart="20dp"
         android:layout_width="180dp"
         android:layout_height="15dp"
