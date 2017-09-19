@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="@string/login_success"
         android:textSize="24sp"
-        android:textColor="#03A9F4"
+        android:textColor="@color/colorText"
         android:textStyle="bold"
         />
 </RelativeLayout>
