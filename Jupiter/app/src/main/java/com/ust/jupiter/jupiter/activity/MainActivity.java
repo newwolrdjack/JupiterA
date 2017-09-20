@@ -1,11 +1,10 @@
 package com.ust.jupiter.jupiter.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -17,8 +16,8 @@ import android.view.MenuItem;
 import com.ust.jupiter.jupiter.R;
 import com.ust.jupiter.jupiter.fragment.CUJoiningFragment;
 import com.ust.jupiter.jupiter.fragment.CUManagementFragment;
-import com.ust.jupiter.jupiter.fragment.CUmemListFragment;
 import com.ust.jupiter.jupiter.fragment.CUOverviewFragment;
+import com.ust.jupiter.jupiter.fragment.CUmemListFragment;
 import com.ust.jupiter.jupiter.fragment.DigitalAssetFragment;
 import com.ust.jupiter.jupiter.fragment.OverviewFragment;
 import com.ust.jupiter.jupiter.fragment.ReceiveTokenFragment;
@@ -88,7 +87,7 @@ public class MainActivity extends AppCompatActivity
             replaceFragment(new ReceiveTokenFragment());
         } else if (id == R.id.nav_digital_asset) {
             replaceFragment(new DigitalAssetFragment());
-        }else if (id == R.id.nav_mem_list){
+        } else if (id == R.id.nav_mem_list) {
             replaceFragment(new CUmemListFragment());
         } else if (id == R.id.nav_cu_overview) {
             replaceFragment(new CUOverviewFragment());
@@ -98,14 +97,12 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    private void replaceFragment(Fragment fragment){
+    private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.fragment_main,fragment);
+        transaction.replace(R.id.fragment_main, fragment);
         transaction.commit();
     }
-
-
 
 
 }

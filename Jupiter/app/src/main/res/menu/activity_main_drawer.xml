@@ -24,21 +24,19 @@
     <item android:title="Consensus unit">
         <menu>
             <item
-                android:id="@+id/nav_join_cu"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Join CU" />
-            <item
-                android:id="@+id/nav_mem_list"
-                android:icon="@drawable/ic_menu_share"
-                android:title="CU Member List" />
+                android:id="@+id/nav_cu_overview"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="CU Overview" />
+
             <item
                 android:id="@+id/nav_cu_management"
                 android:icon="@drawable/ic_menu_manage"
                 android:title="CU management" />
             <item
-                android:id="@+id/nav_cu_overview"
-                android:icon="@drawable/ic_menu_manage"
-                android:title="CU Overview" />
+                android:id="@+id/nav_join_cu"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Join CU" />
+
         </menu>
     </item>
 

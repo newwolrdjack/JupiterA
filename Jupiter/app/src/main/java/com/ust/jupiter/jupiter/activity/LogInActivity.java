@@ -11,9 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-
 import com.ust.jupiter.jupiter.R;
-import com.ust.jupiter.jupiter.activity.RegisterActivity;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -58,7 +56,7 @@ public class LogInActivity extends AppCompatActivity {
                 }
                 break;
             case R.id.bt_go:
-                if(loginChecker(username,userPasswd)) {
+                if (loginChecker(username, userPasswd)) {
                     Intent i2 = new Intent(this, com.ust.jupiter.jupiter.activity.MainActivity.class);
                     startActivity(i2);
                 } else {

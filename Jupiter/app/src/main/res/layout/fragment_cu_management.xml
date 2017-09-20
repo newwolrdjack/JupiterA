@@ -17,12 +17,12 @@
         android:textSize="14sp" />
 
     <View
+        android:layout_width="fill_parent"
         android:layout_height="3px"
-        android:background="@color/colorHint"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_width="fill_parent" />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorHint" />
 
     <TextView
         android:id="@+id/text_storage_status_title"
@@ -35,33 +35,33 @@
         android:textSize="14sp" />
 
     <View
-        android:layout_marginTop="95dp"
-        android:layout_marginStart="20dp"
         android:layout_width="80dp"
         android:layout_height="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="95dp"
         android:background="@color/colorBackground" />
 
     <View
-        android:layout_marginTop="120dp"
-        android:layout_marginStart="20dp"
         android:layout_width="150dp"
         android:layout_height="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
         android:background="@color/colorBackground" />
 
     <View
-        android:layout_marginTop="145dp"
-        android:layout_marginStart="20dp"
         android:layout_width="180dp"
         android:layout_height="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="145dp"
         android:background="@color/colorBackground" />
 
     <View
+        android:layout_width="fill_parent"
         android:layout_height="3px"
-        android:background="@color/colorHint"
-        android:layout_marginTop="170dp"
-        android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_width="fill_parent" />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="170dp"
+        android:background="@color/colorHint" />
 
     <TextView
         android:id="@+id/text_block_num"
@@ -85,12 +85,12 @@
 
     <Button
         android:id="@+id/button_optcu"
-        android:layout_width="wrap_content"
-        android:layout_height="78dp"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="380dp"
         android:background="@drawable/roundbutton"
-        android:text="Optimize CU"
+        android:text="Optimize"
         android:textColor="#000000" />
 
 </FrameLayout>
