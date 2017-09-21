@@ -87,9 +87,7 @@ public class MainActivity extends AppCompatActivity
             replaceFragment(new ReceiveTokenFragment());
         } else if (id == R.id.nav_digital_asset) {
             replaceFragment(new DigitalAssetFragment());
-        } else if (id == R.id.nav_mem_list) {
-            replaceFragment(new CUmemListFragment());
-        } else if (id == R.id.nav_cu_overview) {
+        }  else if (id == R.id.nav_cu_overview) {
             replaceFragment(new CUOverviewFragment());
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
