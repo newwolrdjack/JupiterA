@@ -61,7 +61,7 @@ public class LogInActivity extends AppCompatActivity {
                     startActivity(i2);
                 } else {
 
-                }
+            }
                 break;
         }
     }
