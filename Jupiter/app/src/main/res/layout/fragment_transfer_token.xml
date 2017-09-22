@@ -5,110 +5,97 @@
     tools:context="com.ust.jupiter.jupiter.fragment.TransferTokenFragment">
     <!-- TODO: Update blank fragment layout -->
 
-    <View
-        android:layout_marginTop="50dp"
-        android:layout_width="8dp"
-        android:layout_height="15dp"
-        android:background="@color/jupiterChain" />
     <TextView
         android:id="@+id/text_transfer_to"
-        android:layout_marginTop="50dp"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:textColor="#9a9a9a"
-        android:textSize="14sp"
-        android:text="To" />
+        android:layout_marginTop="95dp"
+        android:text="To"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_transfer_from"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="From"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
 
     <EditText
-        android:id="@+id/text_transfer_address"
-        android:layout_width="348dp"
+        android:id="@+id/et_transfer_from"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="70dp"
-        android:hint="Transfer address"
-        android:maxLines="1" />
+        android:layout_marginTop="40dp"
+        android:hint="My wallet or CU address"
+        android:maxLines="1"
+        android:textSize="14sp" />
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="60dp"
-        android:layout_marginStart="300dp"
-        android:id="@+id/button_transfer_address"
-        android:text="QR" />
-
-    <View
-        android:layout_marginTop="150dp"
-        android:layout_width="8dp"
-        android:layout_height="15dp"
-        android:background="@color/jupiterChain" />
     <TextView
         android:id="@+id/text_transfer_Star"
-        android:layout_marginTop="150dp"
-        android:layout_width="match_parent"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:textColor="#9a9a9a"
-        android:textSize="14sp"
-        android:text="Transfer By Stardust" />
-    <EditText
-        android:id="@+id/text_transfer_Stardust"
         android:layout_marginTop="170dp"
-        android:layout_width="181dp"
-        android:layout_height="wrap_content"
-        android:hint="Stardust number"
-        android:layout_marginStart="20dp"
-        android:maxLines="1" />
-
-
-    <TextView
-        android:id="@+id/text_transfer_Token"
-        android:layout_marginTop="150dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="240dp"
-        android:textColor="#9a9a9a"
-        android:textSize="14sp"
-        android:text="By Token" />
-    <EditText
-        android:id="@+id/text_transfer_Tokennumber"
-        android:layout_marginTop="170dp"
-        android:layout_width="146dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="220dp"
-        android:hint="Token ID"
-        android:maxLines="1" />
+        android:text="Transfer By Stardust"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
 
 
     <TextView
         android:id="@+id/text_transfer_cost"
-        android:layout_marginTop="250dp"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:textColor="#9a9a9a"
-        android:textSize="14sp"
-        android:text="Cost" />
+        android:layout_marginTop="240dp"
+        android:text="Transaction fee"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
+
     <EditText
-        android:id="@+id/text_transfer_costnumber"
-        android:layout_marginTop="270dp"
-        android:layout_width="349dp"
+        android:id="@+id/text_transfer_cost_number"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:hint="Money number"
-        android:maxLines="1" />
+        android:layout_marginTop="260dp"
+        android:maxLines="1"
+        android:text="0.00"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/text_transfer_Stardust"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="190dp"
+        android:hint="0.00"
+        android:maxLines="1"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/text_transfer_address"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="115dp"
+        android:hint="Transfer address"
+        android:maxLines="1"
+        android:textSize="14sp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="400dp"
-        android:layout_gravity="center_horizontal"
         android:id="@+id/button_transfer"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
         android:background="@drawable/roundbutton"
-        android:textColor="#FFFFFF"
-        android:text="Next Step" />
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="@color/colorHint" />
+
 
 </FrameLayout>
