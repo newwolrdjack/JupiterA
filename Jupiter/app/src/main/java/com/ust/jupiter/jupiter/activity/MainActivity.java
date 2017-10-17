@@ -1,7 +1,5 @@
 package com.ust.jupiter.jupiter.activity;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -18,8 +16,7 @@ import android.view.MenuItem;
 import com.ust.jupiter.jupiter.R;
 import com.ust.jupiter.jupiter.fragment.CUJoiningFragment;
 import com.ust.jupiter.jupiter.fragment.CUManagementFragment;
-import com.ust.jupiter.jupiter.fragment.CUOverviewFragment;
-import com.ust.jupiter.jupiter.fragment.CUmemListFragment;
+import com.ust.jupiter.jupiter.fragment.CUCreationFragment;
 import com.ust.jupiter.jupiter.fragment.DigitalAssetFragment;
 import com.ust.jupiter.jupiter.fragment.MainFragment;
 import com.ust.jupiter.jupiter.fragment.OverviewFragment;
@@ -92,7 +89,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_digital_asset) {
             replaceFragment(new DigitalAssetFragment());
         }  else if (id == R.id.nav_cu_overview) {
-            replaceFragment(new CUOverviewFragment());
+            replaceFragment(new CUCreationFragment());
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

@@ -4,9 +4,8 @@ import java.util.UUID;
 
 
 
-public class Commons {
+public class CommonUtils {
     public final static byte userAddress = 1;
-
 
     public String generateCUAddress() {
         return UUID.randomUUID().toString();

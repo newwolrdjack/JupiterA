@@ -26,7 +26,7 @@
             <item
                 android:id="@+id/nav_cu_overview"
                 android:icon="@drawable/ic_menu_manage"
-                android:title="CU Overview" />
+                android:title="CU Creation" />
 
             <item
                 android:id="@+id/nav_cu_management"
