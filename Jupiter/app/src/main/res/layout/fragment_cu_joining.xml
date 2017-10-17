@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="90dp"
-        android:text="16 peers"
+        android:text="9 peers"
         android:textColor="#000000"
         android:textSize="14sp" />
 
@@ -151,7 +151,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="150dp"
-        android:text="2017-01-14 3:00am"
+        android:text="2017-8- 15 3:00pm"
         android:textColor="#000000"
         android:textSize="14sp" />
 

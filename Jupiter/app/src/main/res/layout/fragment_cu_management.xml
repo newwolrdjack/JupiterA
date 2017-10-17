@@ -6,6 +6,37 @@
     android:layout_height="match_parent"
     tools:context="com.ust.jupiter.jupiter.fragment.CUManagementFragment">
 
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/jupiterChain" />
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="65dp"
+        android:background="@color/jupiterChain" />
+
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="65dp"
+        android:background="@color/jupiterChain" />
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="175dp"
+        android:background="@color/jupiterChain" />
+
+
     <TextView
         android:id="@+id/text_block_num_title"
         android:layout_width="160dp"
@@ -69,7 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="180dp"
         android:layout_marginTop="20dp"
-        android:text="23,451"
+        android:text="2451"
         android:textColor="#9a9a9a"
         android:textSize="14sp" />
 
@@ -78,7 +109,7 @@
         android:layout_width="326dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="175dp"
         android:text="@string/distribution_status"
         android:textColor="#000000"
         android:textSize="14sp" />

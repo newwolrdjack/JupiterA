@@ -24,4 +24,9 @@
     <string name="storage_status">Storage Status</string>
     <string name="distribution_status">Distribution Status</string>
     <string name="current_cu_address">0x16obUsfXvcYq6mXXC2XxyUGyq57MRFjCKu</string>
+    <string name="current_cu_active_node_1">0x9678a86f0201231D4ef7a3EC05f0c49166</string>
+    <string name="current_cu_active_node_2">0x6a19F0379F98120bbE6172645ACd9A5a4A</string>
+    <string name="current_cu_active_node_3">0x957A48b64E440B163b2e3E3cC950D2997e</string>
+    <string name="current_cu_active_node_4">0x096fA565a2C77484e83DFe0eE2a811Dd76</string>
+    <string name="current_cu_active_node_5">0x293fE06a6065498719419F78f929a1350c</string>
 </resources>

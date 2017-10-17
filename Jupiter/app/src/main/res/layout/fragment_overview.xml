@@ -6,8 +6,143 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/text_user_address"
+        android:id="@+id/text_hint_last_block"
+        android:layout_width="121dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Last Block: "
+        android:textColor="@color/colorCommonHint"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_hint_cu_state"
+        android:layout_width="121dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:text="Current cu: "
+        android:textColor="@color/colorCommonHint"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/text_hint_cu_peers"
+        android:layout_width="121dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="140dp"
+        android:text="Internal peers: "
+        android:textColor="@color/colorCommonHint"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_hint_p2p_peers"
+        android:layout_width="121dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:text="External peers: "
+        android:textColor="@color/colorCommonHint"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_current_last_block"
+        android:layout_width="121dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="2455"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3px"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/colorHint" />
+
+    <TextView
+        android:id="@+id/text_current_cu_address"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="This is overview"/>
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/current_cu_address"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3px"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="130dp"
+        android:background="@color/colorHint" />
+
+    <TextView
+        android:id="@+id/text_current_cu_total_peers"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="170dp"
+        android:text="Total: 9 peers"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
+
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="3px"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="190dp"
+        android:background="@color/colorHint" />
+
+    <TextView
+        android:id="@+id/text_current_cu_active_peers"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="170dp"
+        android:text="Active: 7 peers"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="120dp"
+        android:layout_height="3px"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="190dp"
+        android:background="@color/colorHint" />
+
+    <TextView
+        android:id="@+id/text_current_p2p_total_peers"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="230dp"
+        android:text="Total: 12 peers"
+        android:textColor="@color/colorText"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3px"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/colorHint" />
+    <Button
+        android:id="@+id/create_account"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/roundbutton"
+        android:text="Create"
+        android:textColor="#000000" />
+
+
+
 </FrameLayout>

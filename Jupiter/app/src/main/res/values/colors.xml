@@ -12,4 +12,5 @@
     <color name="colorCommonHint">#9a9a9a</color>
     <color name="white">#FFFFFF</color>
     <color name="Cyan">#00cccc</color>
+    <color name="ActiveNode">#32CD32</color>
 </resources>

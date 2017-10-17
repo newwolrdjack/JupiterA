@@ -6,92 +6,65 @@
     tools:context="com.ust.jupiter.jupiter.fragment.ReceiveTokenFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hi this is receive token fragment" />
-
-
 
     <View
-        android:layout_marginTop="400dp"
-        android:layout_marginStart="5dp"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="340dp"
         android:background="@color/jupiterChain" />
 
     <View
-        android:layout_marginTop="405dp"
-        android:layout_marginStart="5dp"
         android:layout_width="5dp"
         android:layout_height="18dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="350dp"
         android:background="@color/jupiterChain" />
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="114dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="405dp"
         android:layout_marginStart="15dp"
+        android:layout_marginTop="350dp"
+        android:text="Token"
         android:textColor="@color/jupiterChain"
-        android:textSize="14sp"
-        android:text="Stardust" />
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/text_receive_Stardust"
-        android:layout_marginTop="420dp"
-        android:layout_marginStart="15dp"
-        android:layout_width="100dp"
+        android:layout_width="113dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="365dp"
         android:hint="Stardust"
-        android:maxLines="1" />
+        android:maxLines="1"
+        android:textSize="14dp" />
 
     <View
-        android:layout_marginTop="405dp"
-        android:layout_marginStart="205dp"
         android:layout_width="5dp"
         android:layout_height="18dp"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="350dp"
         android:background="@color/jupiterChain" />
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="405dp"
         android:layout_marginStart="215dp"
+        android:layout_marginTop="350dp"
+        android:text="Transaction fee"
         android:textColor="@color/jupiterChain"
-        android:textSize="14sp"
-        android:text="Transaction fee" />
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/text_receive_token"
-        android:layout_marginTop="420dp"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="215dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="365dp"
         android:hint="Transaction fee"
-        android:maxLines="1" />
-
-
-    <View
-        android:layout_marginTop="465dp"
-        android:layout_marginStart="5dp"
-        android:layout_width="5dp"
-        android:layout_height="18dp"
-        android:background="@color/jupiterChain" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="465dp"
-        android:layout_marginStart="15dp"
-        android:textColor="@color/jupiterChain"
-        android:textSize="14sp"
-        android:text="wallet" />
-
-    <TextView
-        android:id="@+id/text_receive_wallet"
-        android:layout_marginTop="490dp"
-        android:layout_marginStart="15dp"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="wallet"
-        android:maxLines="1" />
+        android:maxLines="1"
+        android:textSize="14dp" />
 
     <ImageView
         android:id="@+id/image_cu_qr_address"
@@ -124,12 +97,4 @@
         android:textSize="14sp"
         android:text="@string/current_cu_address"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="520dp"
-        android:layout_marginLeft="140dp"
-        android:id="@+id/button_receive"
-        android:text="Other app" />
 </FrameLayout>
