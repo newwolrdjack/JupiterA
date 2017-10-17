@@ -75,8 +75,6 @@ public class CUCreationFragment extends Fragment {
         if (!address.isEmpty()) {
             Toast.makeText(cont,"Create CU failed, CU already exist",Toast.LENGTH_SHORT).show();
             System.out.println("Create CU failed, CU already exist");
-            editor.clear();
-            editor.commit();
         } else {
             editor.putString("address", consensusUnit.getAddress());
             editor.putInt("maxmember", consensusUnit.getMaxCUmember());
