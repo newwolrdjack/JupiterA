@@ -10,8 +10,8 @@ public class ConsensusUnit {
     public String id;
     private Boolean CUType;
     private Date buildDate;
-    private int maxCUmember;
-
+    private int maxCUMember;
+    private int latestBlockNumber;
     private List<String> currentActiveAddress;
 
     public String getAddress() {
@@ -30,12 +30,12 @@ public class ConsensusUnit {
         this.CUType = CUType;
     }
 
-    public int getMaxCUmember() {
-        return maxCUmember;
+    public int getMaxCUMember() {
+        return maxCUMember;
     }
 
-    public void setMaxCUmember(int maxCUmember) {
-        this.maxCUmember = maxCUmember;
+    public void setMaxCUMember(int maxCUMember) {
+        this.maxCUMember = maxCUMember;
     }
 
     public List<String> getCurrentActiveAddress() {
@@ -69,4 +69,11 @@ public class ConsensusUnit {
         this.buildDate = buildDate;
     }
 
+    public int getLatestBlockNumber() {
+        return latestBlockNumber;
+    }
+
+    public void setLatestBlockNumber(int latestBlockNumber) {
+        this.latestBlockNumber = latestBlockNumber;
+    }
 }

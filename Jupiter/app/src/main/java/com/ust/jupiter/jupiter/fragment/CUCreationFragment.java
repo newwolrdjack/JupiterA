@@ -51,7 +51,7 @@ public class CUCreationFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 consensusUnit.setName(cuName.getText().toString());
-                consensusUnit.setMaxCUmember(Integer.parseInt(maxCUMember.getText().toString()));
+                consensusUnit.setMaxCUMember(Integer.parseInt(maxCUMember.getText().toString()));
                 consensusUnit.setAddress(UUID.randomUUID().toString());
                 consensusUnit.setId(UUID.randomUUID().toString());
                 consensusUnit.setBuildDate(new Date());
@@ -73,13 +73,11 @@ public class CUCreationFragment extends Fragment {
         SharedPreferences.Editor editor = cont.getSharedPreferences("cuData", cont.MODE_PRIVATE).edit();
         String address = sharedPreferences.getString("address", "");
         if (!address.isEmpty()) {
-            Toast.makeText(cont,"Create CU failed, CU already exist",Toast.LENGTH_SHORT).show();
+            Toast.makeText(cont, "Create CU failed, CU already exist", Toast.LENGTH_SHORT).show();
             System.out.println("Create CU failed, CU already exist");
-            editor.clear();
-            editor.commit();
         } else {
             editor.putString("address", consensusUnit.getAddress());
-            editor.putInt("maxmember", consensusUnit.getMaxCUmember());
+            editor.putInt("maxmember", consensusUnit.getMaxCUMember());
             editor.putString("name", consensusUnit.getName());
             editor.putString("id", consensusUnit.getId());
             editor.putString("date", DateFormat.getDateTimeInstance().format(consensusUnit.getBuildDate()));

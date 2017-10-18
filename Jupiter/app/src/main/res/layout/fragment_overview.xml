@@ -45,7 +45,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/text_current_last_block"
+        android:id="@+id/text_overview_current_last_block"
         android:layout_width="121dp"
         android:layout_height="20dp"
         android:layout_marginStart="30dp"
@@ -62,7 +62,7 @@
         android:background="@color/colorHint" />
 
     <TextView
-        android:id="@+id/text_current_cu_address"
+        android:id="@+id/text_overview_current_cu_address"
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_marginStart="30dp"
@@ -80,7 +80,7 @@
         android:background="@color/colorHint" />
 
     <TextView
-        android:id="@+id/text_current_cu_total_peers"
+        android:id="@+id/text_overview_current_cu_total_peers"
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_marginStart="30dp"
@@ -99,7 +99,7 @@
         android:background="@color/colorHint" />
 
     <TextView
-        android:id="@+id/text_current_cu_active_peers"
+        android:id="@+id/text_overview_current_cu_active_peers"
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_marginStart="180dp"
@@ -117,7 +117,7 @@
         android:background="@color/colorHint" />
 
     <TextView
-        android:id="@+id/text_current_p2p_total_peers"
+        android:id="@+id/text_overview_current_p2p_total_peers"
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_marginStart="30dp"
@@ -133,16 +133,5 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="250dp"
         android:background="@color/colorHint" />
-    <Button
-        android:id="@+id/create_account"
-        android:layout_width="88dp"
-        android:layout_height="88dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="380dp"
-        android:background="@drawable/roundbutton"
-        android:text="Create"
-        android:textColor="#000000" />
-
-
 
 </FrameLayout>

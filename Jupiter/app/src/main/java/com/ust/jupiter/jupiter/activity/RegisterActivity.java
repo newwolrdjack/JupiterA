@@ -16,21 +16,28 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.ust.jupiter.jupiter.R;
+import com.ust.jupiter.jupiter.utils.CommonUtils;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 public class RegisterActivity extends AppCompatActivity {
-
     @InjectView(R.id.fab)
     FloatingActionButton fab;
     @InjectView(R.id.cv_add)
     CardView cvAdd;
-
     @InjectView(R.id.et_username)
-    EditText editText;
+    EditText edUserName;
+    @InjectView(R.id.et_password)
+    EditText edPassword;
+    @InjectView(R.id.et_repeatpassword)
+    EditText edRePassword;
+    private SharedPreferences sharedPreferences;
+    private CommonUtils commonUtils;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +48,38 @@ public class RegisterActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ShowEnterAnimation();
         }
+        this.sharedPreferences = getSharedPreferences("user", Context.MODE_PRIVATE);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                createUserCount(sharedPreferences);
                 animateRevealClose();
             }
         });
     }
+
+    //TODO
+    // Add more checker
+    public Boolean createUserCount(SharedPreferences sharedPreferences) {
+        String account = sharedPreferences.getString("account","");
+        if(account.isEmpty()) {
+            SharedPreferences.Editor editor = this.getSharedPreferences("user",MODE_PRIVATE).edit();
+            editor.putString("account",edUserName.getText().toString());
+            if(edPassword.getText().toString().equals(edRePassword.getText().toString())) {
+                editor.putString("password", edUserName.getText().toString());
+                editor.putString("address",commonUtils.generateAddress());
+                editor.apply();
+                return true;
+            } else {
+                Toast.makeText(this, sharedPreferences.getString("account",""), Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        } else {
+            Toast.makeText(this, "YOU ALREADY HAVE AN ACCOUNT", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+    }
+
 
     private void ShowEnterAnimation() {
         Transition transition = TransitionInflater.from(this).inflateTransition(R.transition.fabtransition);
@@ -131,6 +163,6 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void next(View view) {
         startActivity(new Intent(this, RegSuccessActivity.class).putExtra(
-                "id", editText.getText().toString()));
+                "id", edUserName.getText().toString()));
     }
 }
