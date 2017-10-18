@@ -38,16 +38,16 @@ public class CUJoiningFragment extends Fragment {
         this.cuBuildTime = (TextView) view.findViewById(R.id.text_cu_joining_build_time);
         this.cuMaxmember = (TextView) view.findViewById(R.id.text_cu_joining_number);
         this.cuAddress = (TextView) view.findViewById(R.id.text_current_cu_address);
-        SharedPreferences sharedPreferences = context.getSharedPreferences("cuData",context.MODE_PRIVATE);
-        cuName.setText(sharedPreferences.getString("name",""));
-        if(sharedPreferences.getBoolean("type",false)) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences("cuData", context.MODE_PRIVATE);
+        cuName.setText(sharedPreferences.getString("name", ""));
+        if (sharedPreferences.getBoolean("type", false)) {
             cuType.setText("Public");
         }
-        cuMaxmember.setText(String.valueOf(sharedPreferences.getInt("maxmember",0)));
-        cuAddress.setText(sharedPreferences.getString("address",""));
-        cuBuildTime.setText(sharedPreferences.getString("date",""));
+        cuMaxmember.setText(String.valueOf(sharedPreferences.getInt("maxmember", 0)));
+        cuAddress.setText(sharedPreferences.getString("address", ""));
+        cuBuildTime.setText(sharedPreferences.getString("date", ""));
         return view;
-}
+    }
 
 
 }

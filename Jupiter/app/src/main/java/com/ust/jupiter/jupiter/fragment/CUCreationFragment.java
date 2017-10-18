@@ -73,7 +73,7 @@ public class CUCreationFragment extends Fragment {
         SharedPreferences.Editor editor = cont.getSharedPreferences("cuData", cont.MODE_PRIVATE).edit();
         String address = sharedPreferences.getString("address", "");
         if (!address.isEmpty()) {
-            Toast.makeText(cont,"Create CU failed, CU already exist",Toast.LENGTH_SHORT).show();
+            Toast.makeText(cont, "Create CU failed, CU already exist", Toast.LENGTH_SHORT).show();
             System.out.println("Create CU failed, CU already exist");
         } else {
             editor.putString("address", consensusUnit.getAddress());
