@@ -37,11 +37,15 @@ public class LogInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.inject(this);
+
         SharedPreferences sharedPreferences = getSharedPreferences("account", Context.MODE_PRIVATE);
         String account = sharedPreferences.getString("account","");
         String password = sharedPreferences.getString("password","");
-        etUsername.setText(account);
-        etPassword.setText(password);
+        if(!account.isEmpty()) {
+            etUsername.setText(account);
+            etPassword.setText(password);
+        }
+
     }
 
     @OnClick({R.id.bt_go, R.id.fab})
