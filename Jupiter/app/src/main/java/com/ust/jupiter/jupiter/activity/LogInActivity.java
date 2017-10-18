@@ -12,6 +12,7 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.ust.jupiter.jupiter.R;
 
@@ -32,18 +33,23 @@ public class LogInActivity extends AppCompatActivity {
     @InjectView(R.id.fab)
     FloatingActionButton fab;
 
+    private SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.inject(this);
-
-        SharedPreferences sharedPreferences = getSharedPreferences("account", Context.MODE_PRIVATE);
+        this.sharedPreferences = getSharedPreferences("user", Context.MODE_PRIVATE);
         String account = sharedPreferences.getString("account","");
         String password = sharedPreferences.getString("password","");
+        System.out.println(account);
+        System.out.println(password);
         if(!account.isEmpty()) {
             etUsername.setText(account);
             etPassword.setText(password);
+        } else {
+            Toast.makeText(this, "No local account, Please register one", Toast.LENGTH_SHORT).show();
         }
 
     }
