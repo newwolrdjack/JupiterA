@@ -5,4 +5,5 @@ package com.ust.jupiter.jupiter.primitives;
  */
 
 public class NetWhip {
+
 }

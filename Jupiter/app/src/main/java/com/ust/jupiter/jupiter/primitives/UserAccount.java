@@ -4,7 +4,7 @@ package com.ust.jupiter.jupiter.primitives;
 public class UserAccount {
     private String id;
     private String address;
-    private double balance;
+    private double stardust;
 
     public String getAddress() {
         return address;
@@ -14,11 +14,11 @@ public class UserAccount {
         this.address = address;
     }
 
-    public double getBalance() {
-        return balance;
+    public double getStardust() {
+        return stardust;
     }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
+    public void setStardust(double stardust) {
+        this.stardust = stardust;
     }
 }

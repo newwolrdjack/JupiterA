@@ -9,19 +9,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.ust.jupiter.jupiter.R;
+import com.ust.jupiter.jupiter.net.LocalStatus;
+import com.ust.jupiter.jupiter.net.Network;
+
 import java.util.UUID;
 
 public class OverviewFragment extends Fragment {
 
-    private Context context;
-    private TextView txCurrentCUAddress;
-    private TextView txCurrentSumCUMember;
-    private TextView txCurrentActiveCUMember;
-    private TextView txLastBlockNumber;
-    private TextView txCurrentExtenalPeers;
+    Context context;
+    TextView txCurrentCUAddress;
+    TextView txCurrentSumCUMember;
+    TextView txCurrentActiveCUMember;
+    TextView txLastBlockNumber;
+    TextView txCurrentExternalPeers;
+    Network network = new Network();
+    LocalStatus localStatus = new LocalStatus();
+
 
 
     @Override
@@ -34,11 +39,11 @@ public class OverviewFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_overview, container, false);
 
-        this.txCurrentCUAddress = (TextView) view.findViewById(R.id.text_overview_current_cu_address);
-        this.txCurrentActiveCUMember = (TextView) view.findViewById(R.id.text_overview_current_cu_active_peers);
-        this.txCurrentSumCUMember = (TextView) view.findViewById(R.id.text_overview_current_cu_total_peers);
-        this.txLastBlockNumber = (TextView) view.findViewById(R.id.text_overview_current_last_block);
-        this.txCurrentExtenalPeers = (TextView) view.findViewById(R.id.text_overview_current_p2p_total_peers);
+        txCurrentCUAddress = (TextView) view.findViewById(R.id.text_overview_current_cu_address);
+        txCurrentActiveCUMember = (TextView) view.findViewById(R.id.text_overview_current_cu_active_peers);
+        txCurrentSumCUMember = (TextView) view.findViewById(R.id.text_overview_current_cu_total_peers);
+        txLastBlockNumber = (TextView) view.findViewById(R.id.text_overview_current_last_block);
+        txCurrentExternalPeers = (TextView) view.findViewById(R.id.text_overview_current_p2p_total_peers);
 
         this.context = getActivity();
         SharedPreferences userShared = this.context.getSharedPreferences("user", Context.MODE_APPEND);
@@ -48,6 +53,10 @@ public class OverviewFragment extends Fragment {
         } else {
             txCurrentCUAddress.setText(getCurrentCUAddress(cuShared));
             txCurrentSumCUMember.setText(getCurrentCUMaxMember(cuShared));
+            txLastBlockNumber.setText(String.valueOf(localStatus.getCurrentLatestBlockNumber()));
+            txCurrentActiveCUMember.setText(String.valueOf(network.getSumOfCUActiveMember("")));
+            txCurrentExternalPeers.setText(String.valueOf(network.getCurrentExtenalPeers()));
+
         }
         return view;
     }

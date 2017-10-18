@@ -1,13 +1,15 @@
 package com.ust.jupiter.jupiter.net;
 
+import com.ust.jupiter.jupiter.primitives.CUMember;
+
 import java.util.List;
 
 /**
  * Created by User on 18/10/2017.
  */
 
-public class p2p {
-    public int getCurrentCUActiveMember(String cuAddress) {
+public class Network {
+    public int getSumOfCUActiveMember(String cuAddress) {
         return 6;
     }
 
@@ -20,6 +22,10 @@ public class p2p {
     }
 
     public List<String> getCurrentExtenalPeersAddress() {
+        return null;
+    }
+
+    public List<CUMember> getActiveCUMembers(String cuAddress) {
         return null;
     }
 

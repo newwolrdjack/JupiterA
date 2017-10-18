@@ -3,6 +3,7 @@ package com.ust.jupiter.jupiter.primitives;
 
 public class DeviceState {
     private int blockNumber;
+    private int latestBlockNumber;
     private int maxStorageSpace;
     private int currentStorageSpace;
     private Boolean isCUMember;
@@ -38,4 +39,13 @@ public class DeviceState {
     public void setCUMember(Boolean CUMember) {
         isCUMember = CUMember;
     }
+    public int getLatestBlockNumber() {
+        return latestBlockNumber;
+    }
+
+    public void setLatestBlockNumber(int latestBlockNumber) {
+        this.latestBlockNumber = latestBlockNumber;
+    }
+
+
 }
