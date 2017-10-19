@@ -54,8 +54,8 @@ public class OverviewFragment extends Fragment {
             txCurrentCUAddress.setText(getCurrentCUAddress(cuShared));
             txCurrentSumCUMember.setText(getCurrentCUMaxMember(cuShared));
             txLastBlockNumber.setText(String.valueOf(localStatus.getCurrentLatestBlockNumber()));
-            txCurrentActiveCUMember.setText(String.valueOf(network.getSumOfCUActiveMember("")));
-            txCurrentExternalPeers.setText(String.valueOf(network.getCurrentExtenalPeers()));
+            txCurrentActiveCUMember.setText(String.valueOf(network.getCUActiveMemberNumber("")));
+            txCurrentExternalPeers.setText(String.valueOf(network.getCurrentExternalPeers()));
 
         }
         return view;

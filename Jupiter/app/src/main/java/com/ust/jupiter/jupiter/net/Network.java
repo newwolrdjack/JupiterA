@@ -9,15 +9,19 @@ import java.util.List;
  */
 
 public class Network {
-    public int getSumOfCUActiveMember(String cuAddress) {
+    public int getCUActiveMemberNumber(String cuAddress) {
         return 6;
     }
 
-    public List<String> getCurrentCUMemberAddress(String cuAddress) {
+    public List<String> getCUMemberAddress(String cuAddress) {
         return null;
     }
 
-    public int getCurrentExtenalPeers() {
+    public List<CUMember> getCUMemberInfo(String cuAddress) {
+        return null;
+    }
+
+    public int getCurrentExternalPeers() {
         return 12;
     }
 
@@ -27,6 +31,10 @@ public class Network {
 
     public List<CUMember> getActiveCUMembers(String cuAddress) {
         return null;
+    }
+
+    public int getCUSumBlocknumber() {
+        return 3500;
     }
 
 

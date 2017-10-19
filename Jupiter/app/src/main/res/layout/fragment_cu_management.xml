@@ -95,7 +95,7 @@
         android:background="@color/colorHint" />
 
     <TextView
-        android:id="@+id/text_block_num"
+        android:id="@+id/text_cu_mangement_block_num"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="180dp"
