@@ -8,4 +8,10 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         android:titleCondensed="#9a9a9a" />
+
+    <item
+        android:id="@+id/action_camera"
+        android:orderInCategory="100"
+        android:title="camera"
+        android:titleCondensed="#9a9a9a" />
 </menu>

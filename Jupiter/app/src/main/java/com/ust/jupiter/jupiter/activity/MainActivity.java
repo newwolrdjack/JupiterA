@@ -1,5 +1,6 @@
 package com.ust.jupiter.jupiter.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -65,10 +66,14 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()){
+            case R.id.action_camera:
+                startActivity(new Intent(this, QR.class));
+                return true;
+            case R.id.action_settings:
+                return true;
+            default:
         }
-
         return super.onOptionsItemSelected(item);
     }
 
