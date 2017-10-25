@@ -67,12 +67,11 @@
         android:textSize="14dp" />
 
     <ImageView
-        android:id="@+id/image_cu_qr_address"
+        android:id="@+id/image_user_qr_address"
         android:layout_width="240dp"
         android:layout_height="240dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="55dp"
-        app:srcCompat="@drawable/qr_address" />
+        android:layout_marginTop="55dp" />
     <View
         android:layout_marginTop="30dp"
         android:layout_marginStart="5dp"

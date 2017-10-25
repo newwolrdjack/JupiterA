@@ -1,5 +1,6 @@
 package com.ust.jupiter.jupiter.activity;
 
+import android.Manifest;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -22,9 +23,15 @@ import com.ust.jupiter.jupiter.fragment.MainFragment;
 import com.ust.jupiter.jupiter.fragment.OverviewFragment;
 import com.ust.jupiter.jupiter.fragment.ReceiveTokenFragment;
 import com.ust.jupiter.jupiter.fragment.TransferTokenFragment;
+import com.vondear.rxtools.RxActivityTool;
+import com.vondear.rxtools.RxPermissionsTool;
+import com.vondear.rxtools.RxTool;
+import com.vondear.rxtools.activity.ActivityScanerCode;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private MainActivity mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +40,12 @@ public class MainActivity extends AppCompatActivity
         replaceFragment(new MainFragment());
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        mContext= this;
+        RxPermissionsTool.
+                with(mContext).
+                addPermission(Manifest.permission.CAMERA).
+                initPermission();
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -65,10 +78,13 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id){
+            case R.id.action_camera:
+                RxActivityTool.skipActivity(mContext, ActivityScanerCode.class);
+                return true;
+            case R.id.action_settings:
+                return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
